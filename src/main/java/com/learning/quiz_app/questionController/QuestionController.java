@@ -1,4 +1,4 @@
-package com.learning.quiz_app;
+package com.learning.quiz_app.questionController;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
