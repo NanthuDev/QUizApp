@@ -8,7 +8,7 @@ import lombok.Data;
 
 @Entity
 @Data
-public   class Question {
+public   class Questions {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Integer id;
@@ -19,7 +19,7 @@ public   class Question {
     private String option4;
     private String question;
     private String rightChoice;
-    private String difficultylevel;
+    private String difficultyLevel;
 
 
 
