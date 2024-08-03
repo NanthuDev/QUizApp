@@ -1,3 +1,5 @@
+package com.learning.quiz_app;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -6,7 +8,7 @@ import lombok.Data;
 
 @Entity
 @Data
-public class Question {
+public   class Question {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Integer id;
