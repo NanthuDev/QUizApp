@@ -5,6 +5,7 @@ import com.learning.quiz_app.Questions;
 import com.learning.quiz_app.Questions;
 import com.learning.quiz_app.questionService.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -16,7 +17,7 @@ public class QuestionController {
     @Autowired
     QuestionService questionService;
     @GetMapping("allQuestions")
-    public List<Questions> getAllQuestions(){
+    public ResponseEntity <List<Questions>> getAllQuestions(){
         return questionService.getAllQuestions();
     }
 
@@ -26,7 +27,7 @@ public class QuestionController {
     }
 
     @PostMapping("add")
-    public  String addQuestion(@RequestBody Questions question ){
+    public  ResponseEntity<String> addQuestion(@RequestBody Questions question ){
            return  questionService.addQuestion(question);
 
     }
