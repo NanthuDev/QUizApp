@@ -1,6 +1,6 @@
 package com.learning.quiz_app.dao;
 
-import com.learning.quiz_app.Questions;
+import com.learning.quiz_app.model.Questions;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

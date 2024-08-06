@@ -1,6 +1,5 @@
 package com.learning.quiz_app.model;
 
-import com.learning.quiz_app.Questions;
 import jakarta.persistence.*;
 import lombok.Data;
 

@@ -1,6 +1,6 @@
 package com.learning.quiz_app.questionService;
 
-import com.learning.quiz_app.Questions;
+import com.learning.quiz_app.model.Questions;
 import com.learning.quiz_app.dao.QuestionDao;
 import com.learning.quiz_app.dao.QuizDao;
 import com.learning.quiz_app.model.Quiz;

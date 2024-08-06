@@ -1,12 +1,10 @@
 package com.learning.quiz_app.questionService;
 
 
-import com.learning.quiz_app.Questions;
-import com.learning.quiz_app.Questions;
+import com.learning.quiz_app.model.Questions;
 import com.learning.quiz_app.dao.QuestionDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
