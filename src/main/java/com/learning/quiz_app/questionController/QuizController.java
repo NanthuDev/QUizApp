@@ -1,12 +1,14 @@
 package com.learning.quiz_app.questionController;
 
 
+import com.learning.quiz_app.model.QuestionWrapper;
 import com.learning.quiz_app.model.Questions;
 import com.learning.quiz_app.questionService.QuizService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.nio.file.Path;
 import java.util.List;
 
 @RestController
@@ -21,8 +23,10 @@ public class QuizController {
 //        return new ResponseEntity<>("Quiz", HttpStatus.OK);
     }
 
-    @GetMapping("get")
-    public ResponseEntity<List<Questions>> getQuizQuestions(){
+    @GetMapping("get/{Id}")
+    public ResponseEntity<List<QuestionWrapper>> getQuizQuestions(@PathVariable Integer Id){
+
+       return quizService.getQuestionsById(Id);
 
     };
 
